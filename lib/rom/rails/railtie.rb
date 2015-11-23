@@ -70,7 +70,7 @@ module ROM
       def create_container
         configuration = create_configuration
         configuration.auto_registration(root.join("app"))
-        ROM.create_container(configuration)
+        ROM.container(configuration)
       end
 
       # @api private
